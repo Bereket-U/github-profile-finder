@@ -38,19 +38,24 @@ renderData = (user, repos) => {
   //render user repositories - from fetched data
   repos.forEach((repo) => {
     userRepos = document.getElementById("user_repos");
+    // Create div tag to wrap single a repository
+    singleRepo = document.createElement("div");
+    singleRepo.classList.add("single_repo");
+    userRepos.append(singleRepo);
 
     repoName = document.createElement("a");
     repoName.innerText = repo.name;
     repoName.href = repo.html_url;
-    userRepos.append(repoName);
+    singleRepo.append(repoName);
 
     description = document.createElement("p");
     description.innerText = repo.description;
-    userRepos.append(description);
+    singleRepo.append(description);
 
+    //Create div tag to wrap repository details
     repoDetails = document.createElement("div");
     repoDetails.classList.add("repo_details");
-    userRepos.append(repoDetails);
+    singleRepo.append(repoDetails);
 
     language = document.createElement("li");
     language.innerText = repo.language;
