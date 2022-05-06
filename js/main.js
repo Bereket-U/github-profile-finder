@@ -8,6 +8,7 @@ form.addEventListener("submit", function (e) {
   if (search === "") {
     console.log("Please enter username");
   } else {
+    // fetch from github REST API
     fetch(`https://api.github.com/users/${search}`)
       .then((result) => result.json())
       .then((user) => {
@@ -19,8 +20,17 @@ form.addEventListener("submit", function (e) {
             .then((result) => result.json())
             .then((repos) => {
               console.log(repos);
+              renderData(user, repos);
             });
         }
       });
   }
 });
+
+renderData = (user, repos) => {
+  document.getElementById("full_name").innerText = user.name;
+  document.getElementById("username").innerText = user.login;
+  document.getElementById("bio").innerText = user.bio;
+
+  console.log(repos);
+};
