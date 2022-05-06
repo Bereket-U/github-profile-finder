@@ -1,11 +1,14 @@
 .container {
   display: flex;
   min-height: 90vh;
+  padding: 30px;
 }
 .user_info {
   min-width: 20%;
 }
 .user_repos {
+  display: flex;
+  flex-direction: column;
   width: 80%;
 }
 .header {
@@ -19,4 +22,11 @@
 .logo {
   width: 100px;
   border-radius: 100%;
+}
+.repo_details {
+  border-bottom: 1px solid darkgray;
+}
+.repo_details > li {
+  display: inline;
+  margin-right: 30px;
 }
