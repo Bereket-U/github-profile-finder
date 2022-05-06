@@ -8,7 +8,7 @@ form.addEventListener("submit", function (e) {
   if (search === "") {
     console.log("Please enter username");
   } else {
-    // fetch from github REST API
+    // fetch user data from github REST API
     fetch(`https://api.github.com/users/${search}`)
       .then((result) => result.json())
       .then((user) => {
