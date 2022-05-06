@@ -8,7 +8,31 @@
     <title>Github Profile Finder</title>
   </head>
   <body>
-    <h1>Github Profile Finder</h1>
+    <div class="header">
+      <div class="search">
+        <form id="form" autocomplete="off">
+          <input
+            type="text"
+            value="ireade"
+            id="search"
+            placeholder="github Username"
+          />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+      <div class="nav">
+        <a href="" class="nav_item">Pull Requestes</a>
+        <a href="" class="nav_item">Issues</a>
+        <a href="" class="nav_item">Codespaces</a>
+        <a href="" class="nav_item">Marketplace</a>
+        <a href="" class="nav_item">Explore</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="user_info" id="user_info">User Information</div>
+      <div class="user_repos" id="user_repos">User Repos</div>
+    </div>
+    <div class="footer">footer</div>
   </body>
 
   <script src="js/main.js"></script>
