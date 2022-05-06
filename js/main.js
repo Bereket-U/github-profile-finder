@@ -19,6 +19,7 @@ form.addEventListener("submit", function (e) {
           fetch(user.repos_url)
             .then((result) => result.json())
             .then((repos) => {
+              repos = repos.slice(0, 20);
               console.log(repos);
               renderData(user, repos);
             });
