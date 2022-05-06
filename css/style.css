@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  min-height: 90vh;
+}
+
+.user_info {
+  min-width: 20%;
+}
+
+.user_repos {
+  width: 80%;
+}
+
+.header {
+  display: flex;
+  align-content: center;
+  /* justify-content: center; */
+  text-align: center;
+}
+
+.nav_item {
+  display: inline;
+  margin-right: 30px;
+  margin-left: 30px;
+}
