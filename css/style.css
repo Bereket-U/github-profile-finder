@@ -48,5 +48,14 @@
   width: 12px;
   height: 12px;
   border-radius: 100%;
-  margin-right: 5px;
+  margin-right: 4px;
+}
+
+.star_icon {
+  display: inline-flex;
+  margin-right: 4px;
+}
+.fork_icon {
+  display: inline-flex;
+  margin-right: 4px;
 }
