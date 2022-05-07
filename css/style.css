@@ -1,3 +1,6 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
 .container {
   display: flex;
   min-height: 90vh;
@@ -28,7 +31,7 @@
   display: inline;
   margin-right: 30px;
   color: #57606a;
-  font-size: 16px;
+  font-size: 12px;
 }
 .single_repo {
   display: flex;
@@ -40,7 +43,7 @@
 }
 .single_repo > p {
   margin: 8px 0px 8px 0px;
-  font-size: 16px;
+  font-size: 12px;
   color: #57606a;
 }
 .language_color {
@@ -58,4 +61,11 @@
 .fork_icon {
   display: inline-flex;
   margin-right: 4px;
+}
+
+.single_repo > a {
+  color: #0969da;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 550;
 }
