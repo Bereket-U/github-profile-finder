@@ -1,21 +1,29 @@
-body {
+* {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 90vh;
 }
 .container {
   display: flex;
-  min-height: 90vh;
-  padding: 30px;
+  max-width: 1000px;
 }
 .user_info {
-  min-width: 20%;
+  min-width: 296px;
 }
 .user_repos {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  min-width: 70%;
 }
 .header {
   display: flex;
+  justify-content: flex-start;
+  background-color: darkgrey;
 }
 .nav_item {
   display: inline;
@@ -23,10 +31,24 @@ body {
   margin-left: 30px;
 }
 .logo {
-  width: 100px;
+  width: 256px;
   border-radius: 100%;
+  margin-bottom: 10px;
 }
-
+.full_name {
+  font-size: 24px;
+  margin: 0px;
+}
+.username {
+  margin: 0px;
+  font-size: 20px;
+  color: #57606a;
+  font-weight: 300;
+}
+.bio {
+  font-size: 16px;
+  font-weight: normal;
+}
 .repo_details > li {
   display: inline;
   margin-right: 30px;
