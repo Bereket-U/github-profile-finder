@@ -39,15 +39,18 @@ renderData = (user, repos) => {
   logo.classList.add("logo");
   userInfo.append(logo);
 
-  const fullName = document.createElement("h1");
+  const fullName = document.createElement("p");
   fullName.textContent = user.name;
+  fullName.classList.add("full_name");
   userInfo.append(fullName);
 
   const username = document.createElement("p");
   username.textContent = user.login;
+  username.classList.add("username");
   userInfo.append(username);
 
   const bio = document.createElement("p");
+  bio.classList.add("bio");
   bio.textContent = user.bio;
   userInfo.append(bio);
 
@@ -59,7 +62,7 @@ renderData = (user, repos) => {
     // Create div tag to wrap a single repository
     const singleRepo = document.createElement("div");
     singleRepo.classList.add("single_repo");
-    userRepos.append(singleRepo);
+    userRepos.appendChild(singleRepo);
 
     // Create repository-name and append to singleRepo
     const repoName = document.createElement("a");
