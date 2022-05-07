@@ -87,6 +87,7 @@ renderData = (user, repos) => {
     language.innerText = repo.language;
     repoDetails.append(language);
 
+    // Create Star Icon
     const starIcon = document.createElement("div");
     starIcon.classList.add("star_icon");
     starIcon.innerHTML = `
@@ -100,6 +101,7 @@ renderData = (user, repos) => {
     stars.innerText = repo.stargazers_count;
     repoDetails.append(stars);
 
+    // Create Fork Icon
     const forkIcon = document.createElement("div");
     forkIcon.classList.add("fork_icon");
     forkIcon.innerHTML = `
