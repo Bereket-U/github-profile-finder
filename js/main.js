@@ -5,6 +5,8 @@ const userRepos = document.getElementById("user_repos");
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
+  clearData();
+
   const search = document.getElementById("search").value;
 
   if (search === "") {
@@ -89,4 +91,9 @@ renderData = (user, repos) => {
     updatedAt.innerText = repo.updated_at;
     repoDetails.append(updatedAt);
   });
+};
+
+clearData = () => {
+  userInfo.innerHTML = "";
+  userRepos.innerHTML = "";
 };
