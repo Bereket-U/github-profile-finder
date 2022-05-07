@@ -23,10 +23,23 @@
   width: 100px;
   border-radius: 100%;
 }
-.repo_details {
-  border-bottom: 1px solid darkgray;
-}
+
 .repo_details > li {
   display: inline;
   margin-right: 30px;
+  color: #57606a;
+  font-size: 16px;
+}
+.single_repo {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #57606a;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  justify-content: space-between;
+}
+.single_repo > p {
+  margin: 8px 0px 8px 0px;
+  font-size: 16px;
+  color: #57606a;
 }
