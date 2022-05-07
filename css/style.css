@@ -43,3 +43,10 @@
   font-size: 16px;
   color: #57606a;
 }
+.language_color {
+  display: inline-flex;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  margin-right: 5px;
+}

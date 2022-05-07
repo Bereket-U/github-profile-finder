@@ -54,6 +54,8 @@ renderData = (user, repos) => {
   console.log(repos);
   //render user repositories - from fetched data
   repos.forEach((repo) => {
+    //Generate randome color for language
+    const randomColor = Math.floor(Math.random() * 16777215).toString(16);
     // Create div tag to wrap a single repository
     const singleRepo = document.createElement("div");
     singleRepo.classList.add("single_repo");
@@ -74,7 +76,13 @@ renderData = (user, repos) => {
     repoDetails.classList.add("repo_details");
     singleRepo.append(repoDetails);
 
-    // Create repository-details and append to repoDetails
+    //Create circle for language color
+    const languageColor = document.createElement("div");
+    languageColor.classList.add("language_color");
+    languageColor.style.backgroundColor = "#" + randomColor;
+    repoDetails.append(languageColor);
+
+    // Create repository-details
     const language = document.createElement("li");
     language.innerText = repo.language;
     repoDetails.append(language);
