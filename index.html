@@ -57,8 +57,9 @@
             <img src="svg/overview.svg" /> Overview</a
           >
           <a href="" class="menu_item active"
-            ><img src="svg/repositories.svg" />Repositories</a
-          >
+            ><img src="svg/repositories.svg" />Repositories
+            <span id="result_number" class="result_number"></span>
+          </a>
           <a href="" class="menu_item"
             ><img src="svg/projects.svg" />Projects</a
           >
@@ -76,12 +77,28 @@
           <div class="repo_search">
             <input type="text" placeholder="Find a repository..." />
           </div>
+          <div class="result_found" id="result_found"></div>
           <div class="user_repos" id="user_repos"></div>
         </div>
       </div>
     </div>
 
-    <div class="footer">footer</div>
+    <div class="footer">
+      <div class="copyright">
+        <img src="svg/github-footer.svg" />
+        <p>© 2022 GitHub, Inc.</p>
+      </div>
+      <div class="footer_links">
+        <a href=""> Terms</a>
+        <a href="">Privacy</a>
+        <a href="">Security </a>
+        <a href="">Status</a>
+        <a href="">Docs</a>
+        <a href="">Contact GitHub</a>
+      </div>
+
+      <div></div>
+    </div>
   </body>
   <script src="js/main.js"></script>
 </html>
