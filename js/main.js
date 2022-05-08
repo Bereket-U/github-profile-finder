@@ -1,14 +1,7 @@
-const form = document.getElementById("form");
-const userInfo = document.getElementById("user_info");
-const userRepos = document.getElementById("user_repos");
-const numberOfRepos = document.getElementById("result_found");
-
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-
-  clearData();
-
-  const search = document.getElementById("search").value;
+// add addEventListener on windows - to get search params
+window.addEventListener("load", () => {
+  const params = new URL(document.location).searchParams;
+  const search = params.get("search");
 
   if (search === "") {
     console.log("Please enter username");
@@ -35,6 +28,10 @@ form.addEventListener("submit", function (e) {
 
 renderData = (user, repos) => {
   //render user information - from fetched data
+  const userInfo = document.getElementById("user_info");
+  const userRepos = document.getElementById("user_repos");
+  const numberOfRepos = document.getElementById("result_found");
+
   const logo = document.createElement("img");
   logo.src = user.avatar_url;
   logo.classList.add("logo");
@@ -132,10 +129,4 @@ renderData = (user, repos) => {
     updatedAt.innerText = repo.updated_at;
     repoDetails.append(updatedAt);
   });
-};
-
-clearData = () => {
-  userInfo.innerHTML = "";
-  userRepos.innerHTML = "";
-  numberOfRepos.innerHTML = "";
 };
