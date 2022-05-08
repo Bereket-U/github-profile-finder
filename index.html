@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Github Profile Finder</title>
   </head>
-  <body class="landing">
-    <div class="header landing">
+  <body class="bg">
+    <div class="header bg">
       <div class="nav">
         <div class="git_logo">
           <img src="svg/github.svg" />
@@ -35,12 +35,28 @@
         <div class="path"><p>/</p></div>
       </div>
     </div>
-    <div>
-      <form method="get" action="profile.html">
-        <input type="text" value="Bereket-U" name="search" id="search" />
-      </form>
+    <div class="landing">
+      <div class="left_side">
+        <h1>Github Profile Finder</h1>
+        <p>
+          Millions of developers and companies build, ship, and maintain their
+          software on GitHub—the largest and most advanced development platform
+          in the world.
+        </p>
+        <form class="" method="get" action="profile.html">
+          <input
+            class="landing_search"
+            type="text"
+            value="Bereket-U"
+            name="search"
+            id="search"
+          />
+          <button class="button_search">Search</button>
+        </form>
+      </div>
+      <div class="right_side">
+        <img width="300px" height="300px" />
+      </div>
     </div>
-
-    <div></div>
   </body>
 </html>
