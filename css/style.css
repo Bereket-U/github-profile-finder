@@ -225,7 +225,14 @@ select:focus {
   width: 600px;
   height: 28px;
   border-radius: 5px;
-  /* border-color: #d1d7de; */
   border: 1px solid #cccccc;
   padding-left: 10px;
+}
+.result_found > p {
+  color: #57606a;
+  font-size: 12px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: solid 1px #d1d7de;
+  max-width: 200px;
 }
