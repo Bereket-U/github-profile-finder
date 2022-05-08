@@ -4,11 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Github Profile Finder</title>
   </head>
-  <body>
-    <form method="get" action="profile.html">
-      <input type="text" value="Bereket-U" name="search" id="search" />
-    </form>
+  <body class="landing">
+    <div class="header landing">
+      <div class="nav">
+        <div class="git_logo">
+          <img src="svg/github.svg" />
+        </div>
+        <div class="link">
+          <a href="" class="link_item">Product</a>
+          <a href="" class="link_item">Team</a>
+          <a href="" class="link_item">Enterprise</a>
+          <a href="" class="link_item">Explore</a>
+          <a href="" class="link_item">Marketplace</a>
+        </div>
+      </div>
+      <div class="search_form">
+        <form id="form" autocomplete="off" method="get" action="profile.html">
+          <input
+            type="text"
+            value="ireade"
+            id="search"
+            class="search"
+            placeholder="github Username"
+            name="search"
+          />
+        </form>
+        <div class="path"><p>/</p></div>
+      </div>
+    </div>
+    <div>
+      <form method="get" action="profile.html">
+        <input type="text" value="Bereket-U" name="search" id="search" />
+      </form>
+    </div>
+
+    <div></div>
   </body>
 </html>
