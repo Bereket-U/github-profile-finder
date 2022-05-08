@@ -3,12 +3,70 @@
   margin: 0px;
   padding: 0px;
 }
+.bg {
+  background: linear-gradient(240deg, #051a41, #041330, #040f25, #040d21);
+  background-size: 400% 400%;
+}
+.landing {
+  display: flex;
+  margin: 0px 100px 0px 100px;
+  padding: 5% 0px 5% 0px;
+  align-items: center;
 
+  max-width: 900px;
+}
+.right_side {
+  display: flex;
+  justify-content: right;
+}
+.left_side {
+  display: flex;
+  flex-direction: column;
+}
+.left_side > h1 {
+  color: white;
+  font-size: 60px;
+}
+.left_side > p {
+  color: #8193b2;
+  font-size: 24px;
+  margin-top: 16px;
+  font-weight: lighter;
+}
+.landing_search {
+  margin-top: 32px;
+  padding-left: 16px;
+  width: 272px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+}
+.landing_search:focus {
+  outline-color: #586f9a;
+}
+
+.button_search {
+  font-size: 15px;
+  font-family: Arial;
+  width: 100px;
+  height: 35px;
+  border-width: 1px;
+  color: #fff;
+  border-color: #18ab29;
+  font-weight: bold;
+  border-radius: 5px;
+  text-shadow: 1px 1px 0px #2f6627;
+  background: #44c767;
+}
+.button_search:hover {
+  background: #5cbf2a;
+}
 .box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* min-height: 90vh; */
+  min-height: 100%;
 }
 .container {
   display: flex;
@@ -43,6 +101,7 @@
   border: solid 1px #ffffffb3;
   border-radius: 5px;
   align-items: center;
+  background-color: #24292f;
 }
 .search {
   width: 235px;
@@ -85,15 +144,13 @@ select:focus {
   align-items: center;
   justify-content: center;
 }
-.git_logo > img {
-  padding-top: 5px;
+.git_logo > a > img {
+  padding-top: 7px;
 }
 .setting {
   display: flex;
   align-items: center;
   color: white;
-  margin-right: 0px auto;
-  margin-left: unset;
 }
 .notification {
   color: white;
@@ -215,7 +272,6 @@ select:focus {
   font-weight: 600;
   border-bottom: solid 2px #fd8c73;
 }
-
 .repo_search {
   border-bottom: solid 1px #d1d7de;
   padding-top: 16px;
@@ -241,7 +297,7 @@ select:focus {
   border-top: solid 1px #d1d7de;
   padding: 32px 0px 32px 40px;
   font-size: 12px;
-  margin: 0px 30px 0px 30px;
+  margin: 30px 30px 0px 30px;
 }
 .copyright {
   display: flex;

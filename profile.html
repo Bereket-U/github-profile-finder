@@ -5,34 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Github Profile Finder</title>
+    <title>GitHub Profile Finder</title>
   </head>
   <body>
     <div class="header">
       <div class="nav">
         <div class="git_logo">
-          <img src="svg/github.svg" />
+          <a href="index.html"><img src="svg/github.svg" /></a>
         </div>
-
         <div class="search_form">
-          <form id="form" autocomplete="off">
+          <form id="form" autocomplete="off" method="get" action="profile.html">
             <input
               type="text"
-              value="ireade"
               id="search"
               class="search"
-              placeholder="github Username"
+              placeholder="Search GitHub"
+              name="search"
+              required
             />
-            <!-- <button type="submit">Search</button> -->
           </form>
           <div class="path"><p>/</p></div>
         </div>
         <div class="link">
+          <a href="index.html" class="link_item">Home</a>
           <a href="" class="link_item">Pull Requestes</a>
           <a href="" class="link_item">Issues</a>
           <a href="" class="link_item">Codespaces</a>
           <a href="" class="link_item">Marketplace</a>
-          <a href="" class="link_item">Explore</a>
         </div>
       </div>
       <div class="setting">
