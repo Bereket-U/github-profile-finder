@@ -151,8 +151,8 @@ select:focus {
   align-items: center;
   justify-content: center;
 }
-.git_logo > img {
-  padding-top: 5px;
+.git_logo > a > img {
+  padding-top: 7px;
 }
 .setting {
   display: flex;
@@ -279,7 +279,6 @@ select:focus {
   font-weight: 600;
   border-bottom: solid 2px #fd8c73;
 }
-
 .repo_search {
   border-bottom: solid 1px #d1d7de;
   padding-top: 16px;
