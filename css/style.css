@@ -24,6 +24,7 @@
   display: flex;
   flex-direction: column;
   min-width: 600px;
+  max-width: 600px;
 }
 .header {
   /* justify-content: flex-start; */
@@ -130,17 +131,20 @@ select:focus {
 .full_name {
   font-size: 24px;
   margin: 0px;
+  max-width: 250px;
 }
 .username {
   margin: 0px;
   font-size: 20px;
   color: #57606a;
   font-weight: 300;
+  max-width: 250px;
 }
 .bio {
   font-size: 16px;
   color: #24292f;
   max-width: 250px;
+  padding-top: 18px;
 }
 .repo_details > li {
   display: inline;
@@ -151,7 +155,7 @@ select:focus {
 .single_repo {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #b4bac2;
+  border-bottom: 1px solid #d1d7de;
   padding-top: 25px;
   padding-bottom: 25px;
   justify-content: space-between;
@@ -184,10 +188,11 @@ select:focus {
   font-weight: 550;
 }
 .menu {
-  border-bottom: 1px solid #b4bac2;
+  border-bottom: 1px solid #d1d7de;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-left: 60px;
 }
 .menu_item {
   padding-right: 15px;
@@ -209,4 +214,18 @@ select:focus {
 .active {
   font-weight: 600;
   border-bottom: solid 2px #fd8c73;
+}
+
+.repo_search {
+  border-bottom: solid 1px #d1d7de;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.repo_search > input {
+  width: 600px;
+  height: 28px;
+  border-radius: 5px;
+  /* border-color: #d1d7de; */
+  border: 1px solid #cccccc;
+  padding-left: 10px;
 }
