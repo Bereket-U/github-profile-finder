@@ -55,10 +55,14 @@ renderData = (user, repos) => {
   bio.textContent = user.bio;
   userInfo.append(bio);
 
+  // render number of repos found
   const resultFound = document.createElement("p");
   resultFound.classList.add("result_found");
   resultFound.textContent = `${repos.length} results for public repositories`;
   numberOfRepos.append(resultFound);
+
+  // render number of repos on menu - repositories
+  document.getElementById("result_number").textContent = repos.length;
 
   console.log(repos);
   //render user repositories - from fetched data
