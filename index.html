@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Github Profile Finder</title>
+    <title>GitHub Profile Finder</title>
   </head>
   <body class="bg">
     <div class="header bg">
       <div class="nav">
         <div class="git_logo">
-          <img src="svg/github.svg" />
+          <a href="index.html"><img src="svg/github.svg" /></a>
         </div>
         <div class="link">
           <a href="" class="link_item">Product</a>
@@ -30,6 +30,7 @@
             class="search"
             placeholder="github Username"
             name="search"
+            required
           />
         </form>
         <div class="path"><p>/</p></div>
@@ -38,7 +39,7 @@
     <div class="box">
       <div class="landing">
         <div class="left_side">
-          <h1>Github Profile Finder</h1>
+          <h1>GitHub Profile Finder</h1>
           <p>
             Millions of developers and companies build, ship, and maintain their
             software on GitHub—the largest and most advanced development
@@ -48,9 +49,10 @@
             <input
               class="landing_search"
               type="text"
-              value="Bereket-U"
               name="search"
               id="search"
+              placeholder="Search GitHub"
+              required
             />
             <button class="button_search">Search</button>
           </form>
