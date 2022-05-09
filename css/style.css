@@ -139,7 +139,7 @@ select:focus {
   border-radius: 100px;
   border: none;
   margin-right: 16px;
-  width: 32px;
+  min-width: 32px;
   height: 32px;
   align-items: center;
   justify-content: center;
@@ -322,4 +322,72 @@ select:focus {
   background-color: #ebebeb;
   border-radius: 70%;
   font-weight: lighter;
+}
+.tabs {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .button_search,
+  .setting,
+  .menu {
+    display: none;
+  }
+  .left_side > h1 {
+    font-size: 40px;
+    padding-top: 20px;
+  }
+  .left_side > p {
+    font-size: 16px;
+  }
+  .footer,
+  .footer_links {
+    flex-direction: column;
+    align-items: unset;
+  }
+  .repo_search,
+  .repo_search > input,
+  .result_found,
+  .single_repo {
+    max-width: 300px;
+  }
+  .container {
+    max-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .right_side,
+  .bg > .search_form,
+  .nav > .link {
+    display: none;
+  }
+  .left_side > h1 {
+    font-size: 40px;
+    padding-top: 18px;
+  }
+  .left_side > p {
+    font-size: 20px;
+  }
+  .user_info {
+    display: block;
+  }
+  .container,
+  .menu {
+    min-width: auto;
+    padding: 0px;
+    align-items: unset;
+  }
+  .box > .container {
+    display: block;
+  }
+  .logo {
+    width: 65px;
+    height: 65px;
+    margin: 16px 16px 16px 0px;
+  }
+  .footer {
+    margin: 30px 0px 0px 0px;
+  }
 }
