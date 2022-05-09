@@ -18,7 +18,6 @@ window.addEventListener("load", () => {
             .then((result) => result.json())
             .then((repos) => {
               repos = repos.slice(0, 20);
-              console.log(repos);
               renderData(user, repos);
             });
         }
@@ -61,7 +60,6 @@ renderData = (user, repos) => {
   // render number of repos on menu - repositories
   document.getElementById("result_number").textContent = repos.length;
 
-  console.log(repos);
   //render user repositories - from fetched data
   repos.forEach((repo) => {
     //Generate randome color for language
