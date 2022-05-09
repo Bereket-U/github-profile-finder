@@ -13,6 +13,7 @@ window.addEventListener("load", () => {
         console.log(user);
         if (!user.login) {
           console.log("User Not Found");
+          renderNoUser();
         } else {
           fetch(user.repos_url)
             .then((result) => result.json())
@@ -135,4 +136,11 @@ renderData = (user, repos) => {
     updatedAt.innerText = `Updated on ${date[1]} ${date[0]}`;
     repoDetails.append(updatedAt);
   });
+};
+// render user not found
+renderNoUser = () => {
+  const resultFound = document.getElementById("result_found");
+  const noUser = document.createElement("p");
+  noUser.textContent = `User Not Found`;
+  resultFound.append(noUser);
 };
