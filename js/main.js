@@ -125,8 +125,16 @@ renderData = (user, repos) => {
     forks.innerText = repo.forks;
     repoDetails.append(forks);
 
+    //get only year and month from date
+    const date = repo.updated_at.split("-").slice(0, 2);
+
+    const d = new Date();
+    d.setMonth(date[1] - 1);
+    const monthName = d.toLocaleString("default", { month: "long" });
+    date[1] = monthName;
+
     const updatedAt = document.createElement("li");
-    updatedAt.innerText = repo.updated_at;
+    updatedAt.innerText = `Updated on ${date[1]} ${date[0]}`;
     repoDetails.append(updatedAt);
   });
 };
