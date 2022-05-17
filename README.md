@@ -6,7 +6,7 @@ A simple Javascript application, Using the GitHub Rest API, recreated the GitHub
 
 ## **Getting Started**
 
-Here is a [Link](https://glistening-lokum-15880f.netlify.app/) to start playing! Enjoy!
+Here is a [Link](https://glistening-lokum-15880f.netlify.app/) to start live demo! Enjoy!
 
 ## Technologies Used
 
